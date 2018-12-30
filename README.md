@@ -13,3 +13,7 @@ Use the `startconky.sh` script to start them in proper order.
 Put all the files in `~/.Conky/` and run the script to start them. You can autostart the script at startup to make it
 load at every boot.
 
+Example image:
+
+![alt text](example_image.png "Example configuration")
+
