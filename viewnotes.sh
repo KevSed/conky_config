@@ -1,3 +1,4 @@
 #!/bin/bash
 
-awk 'BEGIN{FS="\""}{print $2}' ~/.task/pending.data
+tasks=$(task status=pending export)
+echo $tasks | awk -f format_notes.awk | sed 's/[]["\\]//g'
