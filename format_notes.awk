@@ -6,7 +6,11 @@ BEGIN{
 	print "ID ${alignc 2000}Project ${alignr 0}Description \n";
 }
 {if ($2 > 0) {
-	print "${color" int($16) "} " $2 " ";
+    if ($15~"urgency")
+	    {print "${color" int($16/1.2) "} " $2 " "}
+    else if ($17~"urgency")
+	    {print "${color" int($18/1.2) "} " $2 " "};
+
 	if ($9~"project")
 		{print "${alignc 2000} " $10 " "}
     else if ($11~"project")
