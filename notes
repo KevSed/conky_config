@@ -29,5 +29,5 @@ conky.config = {
 conky.text = [[
 ${color9}TaskWarrior
 ${stippled_hr}
-${execp ~/.Conky/viewnotes.sh}
+${execp ~/.conky/viewnotes.sh}
 ]]
